@@ -9,7 +9,7 @@
     </head>
     <body>
         <?php $this->load->view('app/form_filter') ?>
-        
+        <?php $this->load->view('app/post_list') ?>
         <script src="<?php echo base_url(); ?>pub/js/jquery.min.js"></script>
         <script src="<?php echo base_url(); ?>pub/bootstrap/js/bootstrap.min.js"></script>
     </body>
