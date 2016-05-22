@@ -21,7 +21,7 @@ class Cmb_model extends MY_Model{
         }
     }
     
-    public function get_list_district($province_id){
+    public function get_list_district($province_id = null){
         $this->db->select('*');
         $this->db->from($this->table_district);
         $this->db->where('province_id', $province_id);
@@ -34,7 +34,7 @@ class Cmb_model extends MY_Model{
         }
     }
     
-    public function get_list_ward($district_id){
+    public function get_list_ward($district_id = null){
         $this->db->select('*');
         $this->db->from($this->table_ward);
         $this->db->where('district_id', $district_id);
